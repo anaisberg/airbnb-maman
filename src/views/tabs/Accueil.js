@@ -69,17 +69,12 @@ function Accueil() {
                                 <h5 className="description">
                                     Parking gratuit et espace pour vélos ou skis.
                                 </h5>
-                                <br />
-                                <Button
-                                    className="btn-round"
-                                    color="info"
-                                    href="#pablo"
-                                    onClick={(e) => e.preventDefault()}
-                                >
-                                    Voir les photos
-                                </Button>
                             </Col>
                         </Row>
+                        <br />
+                        <Button className="btn-round" color="info" href="#pablo" onClick={(e) => e.preventDefault()}>
+                            Voir les photos
+                        </Button>
                         <br />
                         <br />
                         <Row>

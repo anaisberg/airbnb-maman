@@ -1,5 +1,4 @@
 import React from "react";
-import MyNavbar from "../../components/Navbars/Navbar";
 
 function Studio() {
     document.documentElement.classList.remove("nav-open");
