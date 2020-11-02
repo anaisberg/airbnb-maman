@@ -154,6 +154,11 @@ function Accueil() {
                         <Row>
                             <Col className="ml-auto mr-auto" md="8">
                                 <h2 className="text-center">Contact</h2>
+                                <p className="mt-2">
+                                    N'hésitez pas à envoyer un message si vous souhaitez poser une question sur l'appartement
+                                    ou si vous voulez réserver pour une certaine date. Vous serez recontactés rapidement,
+                                    par téléphone ou mail, comme vous le souhaitez.
+                                </p>
                                 <Form className="contact-form">
                                     <Row>
                                         <Col md="6">
@@ -168,17 +173,26 @@ function Accueil() {
                                             </InputGroup>
                                         </Col>
                                         <Col md="6">
-                                            <label>Email</label>
+                                            <label>Numéro de téléphone</label>
                                             <InputGroup>
                                                 <InputGroupAddon addonType="prepend">
                                                     <InputGroupText>
-                                                        <i className="nc-icon nc-email-85" />
+                                                        <i className="nc-icon nc-mobile" />
                                                     </InputGroupText>
                                                 </InputGroupAddon>
-                                                <Input placeholder="Email" type="text" />
+                                                <Input placeholder="Téléphone" type="text"/>
                                             </InputGroup>
                                         </Col>
                                     </Row>
+                                    <label>Email</label>
+                                    <InputGroup>
+                                        <InputGroupAddon addonType="prepend">
+                                            <InputGroupText>
+                                                <i className="nc-icon nc-email-85" />
+                                            </InputGroupText>
+                                        </InputGroupAddon>
+                                        <Input placeholder="Email" type="text" />
+                                    </InputGroup>
                                     <label>Message</label>
                                     <Input
                                         placeholder="N'hésitez pas à poser vos questions, demander des informations supplémentaires..."

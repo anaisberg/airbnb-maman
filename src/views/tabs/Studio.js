@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function Studio() {
     document.documentElement.classList.remove("nav-open");
@@ -13,7 +14,7 @@ function Studio() {
             <header class="demo-icons">
                 <h1>Gallery Photo</h1>
                 <p>
-                    <a href="/home">Retour au site</a>
+                    <Link to="/home">Retour au site</Link>
                 </p>
             </header>
             <div id="icons-wrapper" class="demo-icons">

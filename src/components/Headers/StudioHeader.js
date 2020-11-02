@@ -17,6 +17,7 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
@@ -25,6 +26,10 @@ import { Button, Container } from "reactstrap";
 
 function StudioHeader() {
   let pageHeader = React.createRef();
+  let linkStylesProps = {
+    color: 'white',
+    fontWeight: 'bold',
+  }
 
   React.useEffect(() => {
     if (window.innerWidth < 991) {
@@ -57,19 +62,14 @@ function StudioHeader() {
             <h1>Studio, Le Hohwald</h1>
             <h3>Appartement en résidence, calme et lumineux.</h3>
             <br />
-            <Button
-              href="https://www.airbnb.fr/rooms/45336253"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
+            <Button className="btn-round mr-2" color="neutral" outline>
               <i className="fa fa-play" />
-              Réserver
+              <Link style={linkStylesProps} to="/contact">Réserver</Link>
             </Button>
-            <Button href="studio" className="btn-round" color="neutral" type="button" outline>
-              Photos
+            <Button className="btn-round" color="neutral" type="button" outline>
+              <Link style={linkStylesProps} to="/studio">Photos</Link>
             </Button>
+
           </div>
         </Container>
       </div>
