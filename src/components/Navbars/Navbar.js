@@ -97,15 +97,18 @@ function MyNavbar() {
                 >
                     <Nav navbar>
                         <NavItem>
+                            <NavLink to="/index" tag={Link}>
+                                Accueil
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
                             <NavLink to="/studio" tag={Link}>
-                                Le studio
+                                Galerie Photo
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                                target="_blank"
-                            >
+                                to="/localisation" tag={Link}>
                                 Localisation
                             </NavLink>
                         </NavItem>

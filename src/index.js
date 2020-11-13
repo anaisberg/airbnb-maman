@@ -32,6 +32,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import Accueil from 'views/tabs/Accueil.js';
 import Studio from "./views/tabs/Studio.js";
 import Contact from "./views/tabs/Contact.js";
+import Localisation from "./views/tabs/Localisation";
 // others
 
 ReactDOM.render(
@@ -39,6 +40,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/home" render={(props) => <Accueil {...props} />} />
       <Route path="/studio" render={(props) => <Studio {...props} />} />
+      <Route path="/localisation" render={(props) => <Localisation {...props} />} />
       <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route
         path="/nucleo-icons"

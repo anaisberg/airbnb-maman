@@ -12,7 +12,7 @@ function Studio() {
     return (
         <>
             <header class="demo-icons">
-                <h1>Gallery Photo</h1>
+                <h1>Galerie Photo</h1>
                 <p>
                     <Link to="/home">Retour au site</Link>
                 </p>
